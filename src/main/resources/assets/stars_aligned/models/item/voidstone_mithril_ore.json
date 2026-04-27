@@ -1,0 +1,6 @@
+{
+  "parent": "stars_aligned:block/voidstone_mithril_ore",
+  "textures": {
+    "all": "stars_aligned:block/voidstone_mithril_ore"
+  }
+}

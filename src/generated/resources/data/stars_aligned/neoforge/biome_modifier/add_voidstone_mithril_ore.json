@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#stars_aligned:is_eternal_starlight",
+  "features": "stars_aligned:voidstone_mithril_ore_placed",
+  "step": "underground_ores"
+}
