@@ -3,9 +3,12 @@ package com.hazen.stars_aligned;
 import com.hazen.stars_aligned.Blocks.SABlocks;
 import com.hazen.stars_aligned.Registries.SACreativeModeTabs;
 import com.hazen.stars_aligned.Registries.SAItemRegistry;
+import com.hazen.stars_aligned.SAUtils.SAArmorMaterials;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -33,6 +36,7 @@ public class StarsAligned {
         SABlocks.register(modEventBus);
 
         SAItemRegistry.register(modEventBus);
+        SAArmorMaterials.register(modEventBus);
 
 
         NeoForge.EVENT_BUS.register(this);
@@ -56,5 +60,10 @@ public class StarsAligned {
             
         }
         
+    }
+
+    public static ResourceLocation id(@NotNull String path)
+    {
+        return ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, path);
     }
 }

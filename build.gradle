@@ -162,6 +162,10 @@ dependencies {
     //Ace Utils
     implementation "curse.maven:eternal_starlight-1080592:7788339"
 
+
+    //HazentouveLib
+    implementation "curse.maven:hazentouvelib-1528722:8015594"
+
     //Apothic Attributes
     /*
     implementation "curse.maven:apothic-attributes-898963:6302334"
@@ -197,6 +201,10 @@ dependencies {
     /*
     *** Optional Dependencies ******************************************************************************************
      */
+
+    //Malum
+    localRuntime "curse.maven:malum-484064:7307339"
+    localRuntime "curse.maven:lodestone-616457:7264731"
 
     // Obscuria's Tooltips
     //localRuntime "curse.maven:obscurias_tooltips-715660:7315944"

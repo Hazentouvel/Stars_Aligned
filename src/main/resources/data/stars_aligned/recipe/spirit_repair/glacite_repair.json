@@ -1,0 +1,35 @@
+{
+  "type": "malum:spirit_repair",
+  "durabilityPercentage": 0.5,
+  "repairMaterial": {
+    "count": 8,
+    "item": "eternal_starlight:glacite"
+  },
+  "spirits": [
+    {
+      "type": "malum:aerial",
+      "count": 8
+    },
+    {
+      "type": "malum:arcane",
+      "count": 8
+    }
+  ],
+  "validItems": [
+    "stars_aligned:glacite_battlemage_helmet",
+    "stars_aligned:glacite_battlemage_chestplate",
+    "stars_aligned:glacite_battlemage_leggings",
+    "stars_aligned:glacite_battlemage_boots",
+    "eternal_starlight:glacite_helmet",
+    "eternal_starlight:glacite_chestplate",
+    "eternal_starlight:glacite_leggings",
+    "eternal_starlight:glacite_boots",
+    "eternal_starlight:glacite_shield",
+    "eternal_starlight:glacite_sword",
+    "eternal_starlight:glacite_pickaxe",
+    "eternal_starlight:glacite_axe",
+    "eternal_starlight:glacite_hoe",
+    "eternal_starlight:glacite_shovel",
+    "eternal_starlight:glacite_scythe"
+  ]
+}

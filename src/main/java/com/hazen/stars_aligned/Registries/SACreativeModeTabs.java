@@ -25,7 +25,30 @@ public class SACreativeModeTabs {
                         output.accept(SABlocks.VOIDSTONE_MITHRIL_ORE);
 
 
-                    }).build());
+                    })
+                    .build());
+
+
+    public static final Supplier<CreativeModeTab> STARS_ALIGN_EQUIPMENT = CREATIVE_MODE_TAB.register("stars_aligned_equipment",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(SAItemRegistry.GLACITE_BATTLEMAGE_HELMET.get()))
+                    .title(Component.translatable("creativetab.stars_aligned.stars_aligned_blocks"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        //Glacite battlemage
+                        output.accept(SAItemRegistry.GLACITE_BATTLEMAGE_HELMET.get());
+                        output.accept(SAItemRegistry.GLACITE_BATTLEMAGE_CHESTPLATE.get());
+                        output.accept(SAItemRegistry.GLACITE_BATTLEMAGE_LEGGINGS.get());
+                        output.accept(SAItemRegistry.GLACITE_BATTLEMAGE_BOOTS.get());
+
+                        //Flowglaze Mastery
+                        output.accept(SAItemRegistry.FLOWGLAZE_MASTERY_HELMET.get());
+                        output.accept(SAItemRegistry.FLOWGLAZE_MASTERY_CHESTPLATE.get());
+                        output.accept(SAItemRegistry.FLOWGLAZE_MASTERY_LEGGINGS.get());
+                        output.accept(SAItemRegistry.FLOWGLAZE_MASTERY_BOOTS.get());
+
+
+                    })
+                    .build());
 
 
     public static void register(IEventBus eventBus) {

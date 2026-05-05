@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "stars_aligned:item/armor_icons/glacite_battlemage_chestplate"
+  }
+}

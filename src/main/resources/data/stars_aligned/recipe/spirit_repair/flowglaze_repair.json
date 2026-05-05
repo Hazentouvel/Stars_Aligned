@@ -1,0 +1,31 @@
+{
+  "type": "malum:spirit_repair",
+  "durabilityPercentage": 0.5,
+  "repairMaterial": {
+    "count": 8,
+    "item": "eternal_starlight:flowglaze"
+  },
+  "spirits": [
+    {
+      "type": "malum:aerial",
+      "count": 8
+    },
+    {
+      "type": "malum:arcane",
+      "count": 8
+    }
+  ],
+  "validItems": [
+    "stars_aligned:flowglaze_mastery_helmet",
+    "stars_aligned:flowglaze_mastery_chestplate",
+    "stars_aligned:flowglaze_mastery_leggings",
+    "stars_aligned:flowglaze_mastery_boots",
+    "eternal_starlight:flowglaze_shield",
+    "eternal_starlight:flowglaze_sword",
+    "eternal_starlight:flowglaze_pickaxe",
+    "eternal_starlight:flowglaze_axe",
+    "eternal_starlight:flowglaze_hoe",
+    "eternal_starlight:flowglaze_shovel",
+    "eternal_starlight:flowglaze_scythe"
+  ]
+}
