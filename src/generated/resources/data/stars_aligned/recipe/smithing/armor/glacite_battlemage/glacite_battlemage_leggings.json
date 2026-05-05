@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "irons_spellbooks:wizard_leggings"
+  },
+  "base": {
+    "item": "eternal_starlight:glacite_leggings"
+  },
+  "result": {
+    "count": 1,
+    "id": "stars_aligned:glacite_battlemage_leggings"
+  },
+  "template": {
+    "item": "irons_spellbooks:ice_rune"
+  }
+}

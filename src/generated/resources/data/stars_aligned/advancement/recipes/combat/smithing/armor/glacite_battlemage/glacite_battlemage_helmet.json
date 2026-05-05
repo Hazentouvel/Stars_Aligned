@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ice_rune": {
+      "conditions": {
+        "items": [
+          {
+            "items": "irons_spellbooks:ice_rune"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stars_aligned:smithing/armor/glacite_battlemage/glacite_battlemage_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ice_rune"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stars_aligned:smithing/armor/glacite_battlemage/glacite_battlemage_helmet"
+    ]
+  }
+}

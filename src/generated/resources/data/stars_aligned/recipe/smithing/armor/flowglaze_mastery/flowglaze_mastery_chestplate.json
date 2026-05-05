@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "eternal_starlight:flowglaze"
+  },
+  "base": {
+    "item": "stars_aligned:glacite_battlemage_chestplate"
+  },
+  "result": {
+    "components": {
+      "irons_spellbooks:spell_container": {
+        "data": [],
+        "maxSpells": 1,
+        "mustEquip": true,
+        "spellWheel": true
+      }
+    },
+    "count": 1,
+    "id": "stars_aligned:flowglaze_mastery_chestplate"
+  },
+  "template": {
+    "item": "eternal_starlight:flowglaze_upgrade_smithing_template"
+  }
+}
