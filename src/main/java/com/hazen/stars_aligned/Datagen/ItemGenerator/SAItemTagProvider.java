@@ -1,6 +1,7 @@
 package com.hazen.stars_aligned.Datagen.ItemGenerator;
 
 import com.hazen.stars_aligned.Registries.SAItemRegistry;
+import com.hazen.stars_aligned.SAUtils.SATags;
 import com.hazen.stars_aligned.StarsAligned;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -20,6 +21,19 @@ public class SAItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
+        tag(SATags.Items.ARMORS)
+                .add(
+                        SAItemRegistry.GLACITE_BATTLEMAGE_HELMET.get(),
+                        SAItemRegistry.GLACITE_BATTLEMAGE_CHESTPLATE.get(),
+                        SAItemRegistry.GLACITE_BATTLEMAGE_LEGGINGS.get(),
+                        SAItemRegistry.GLACITE_BATTLEMAGE_BOOTS.get(),
+
+                        SAItemRegistry.FLOWGLAZE_MASTERY_HELMET.get(),
+                        SAItemRegistry.FLOWGLAZE_MASTERY_CHESTPLATE.get(),
+                        SAItemRegistry.FLOWGLAZE_MASTERY_LEGGINGS.get(),
+                        SAItemRegistry.FLOWGLAZE_MASTERY_BOOTS.get()
+                );
+
         tag(ItemTags.FREEZE_IMMUNE_WEARABLES)
                 .add(
                         SAItemRegistry.GLACITE_BATTLEMAGE_HELMET.get(),
@@ -31,8 +45,7 @@ public class SAItemTagProvider extends ItemTagsProvider {
                         SAItemRegistry.FLOWGLAZE_MASTERY_CHESTPLATE.get(),
                         SAItemRegistry.FLOWGLAZE_MASTERY_LEGGINGS.get(),
                         SAItemRegistry.FLOWGLAZE_MASTERY_BOOTS.get()
-                )
-        ;
+                );
 
         tag(ItemTags.HEAD_ARMOR)
                 .add(
