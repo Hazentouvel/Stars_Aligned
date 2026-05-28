@@ -31,7 +31,7 @@ public class SACreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> STARS_ALIGN_EQUIPMENT = CREATIVE_MODE_TAB.register("stars_aligned_equipment",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(SAItemRegistry.GLACITE_BATTLEMAGE_HELMET.get()))
-                    .title(Component.translatable("creativetab.stars_aligned.stars_aligned_blocks"))
+                    .title(Component.translatable("creativetab.stars_aligned.stars_aligned_equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         //Glacite battlemage
