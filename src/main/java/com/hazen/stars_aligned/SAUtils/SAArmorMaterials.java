@@ -33,7 +33,7 @@ public class SAArmorMaterials {
             0.2F);
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> GLACITE = register("glacite",
-            flowglazeArmorMap(),
+            glaciteArmorMap(),
             15,
             ESSoundEvents.ARMOR_EQUIP_GLACITE.asHolder(),
             () -> Ingredient.of(ESItems.GLACITE.get()),
