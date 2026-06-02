@@ -18,7 +18,7 @@ public class SATags {
     }
 
     public static class Items {
-        public static final TagKey<Item> ARMORS = createTag("armors");
+        public static final TagKey<Item> UNTRIMMABLE_ARMOR = createTag("untrimmable_armor");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("stars_aligned", name));

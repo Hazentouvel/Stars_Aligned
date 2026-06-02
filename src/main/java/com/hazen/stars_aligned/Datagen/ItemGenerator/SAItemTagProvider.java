@@ -21,7 +21,7 @@ public class SAItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
-        tag(SATags.Items.ARMORS)
+        tag(SATags.Items.UNTRIMMABLE_ARMOR)
                 .add(
                         SAItemRegistry.GLACITE_BATTLEMAGE_HELMET.get(),
                         SAItemRegistry.GLACITE_BATTLEMAGE_CHESTPLATE.get(),
