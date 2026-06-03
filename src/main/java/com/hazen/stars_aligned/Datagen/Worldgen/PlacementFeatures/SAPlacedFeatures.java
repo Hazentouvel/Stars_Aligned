@@ -26,7 +26,7 @@ public class SAPlacedFeatures {
 
 
         register(context, VOIDSTONE_MITHRIL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(SAConfiguredFeatures.VOIDSTONE_MITHRIL_ORE_KEY),
-                SAOrePlacement.commonOrePlacement(12,
+                SAOrePlacement.rareOrePlacement(6,
                         HeightRangePlacement
                                 .uniform(VerticalAnchor.absolute(-63),
                                         VerticalAnchor.absolute(-38))

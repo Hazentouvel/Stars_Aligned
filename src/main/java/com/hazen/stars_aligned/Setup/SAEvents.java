@@ -15,6 +15,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.ItemAttributeModifierEvent;
 import net.neoforged.neoforge.event.entity.living.*;
+
 @EventBusSubscriber(modid = StarsAligned.MOD_ID)
 public class SAEvents {
 
@@ -32,6 +33,7 @@ public class SAEvents {
 
 	@EventBusSubscriber
 	public static class setBonuses {
+
 		@SubscribeEvent
 		public static void flowglazeMastery(LivingDamageEvent.Post event) {
 
