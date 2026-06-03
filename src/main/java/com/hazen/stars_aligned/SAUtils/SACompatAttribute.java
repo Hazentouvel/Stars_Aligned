@@ -3,7 +3,6 @@ package com.hazen.stars_aligned.SAUtils;
 import cn.leolezury.eternalstarlight.common.item.armor.*;
 import com.hazen.stars_aligned.StarsAligned;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
-import net.hazen.hazentouvelib.Registries.HLAttributeRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
@@ -94,10 +93,45 @@ public class SACompatAttribute {
         EquipmentSlot slot = armorItem.getEquipmentSlot();
         EquipmentSlotGroup slotGroup = EquipmentSlotGroup.bySlot(slot);
 
+        String armor = switch (slotGroup) {
+            case HEAD -> "helmet";
+            case CHEST -> "chestplate";
+            case LEGS -> "leggings";
+            case FEET -> "boots";
+            default -> "finish";
+        };
+        if (armor.equals("finish")) {
+            return;
+        }
+
         event.addModifier(
-                AttributeRegistry.SPELL_RESIST.getDelegate(),
-                new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "deepsilver_spell_resist"),
-                        0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slotGroup
+                AttributeRegistry.MAX_MANA.getDelegate(),
+                new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "deepsilver_max_mana_" + armor), 75, AttributeModifier.Operation.ADD_VALUE), slotGroup
+        );
+    }
+
+    public static void addAlchemistAttributes(ItemAttributeModifierEvent event) {
+        if (!(event.getItemStack().getItem() instanceof AlchemistArmorItem armorItem)) {
+            return;
+        }
+
+        EquipmentSlot slot = armorItem.getEquipmentSlot();
+        EquipmentSlotGroup slotGroup = EquipmentSlotGroup.bySlot(slot);
+
+        String armor = switch (slotGroup) {
+            case HEAD -> "helmet";
+            case CHEST -> "chestplate";
+            case LEGS -> "leggings";
+            case FEET -> "boots";
+            default -> "finish";
+        };
+        if (armor.equals("finish")) {
+            return;
+        }
+
+        event.addModifier(
+                AttributeRegistry.MAX_MANA.getDelegate(),
+                new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "alchemist_max_mana_" + armor), 75, AttributeModifier.Operation.ADD_VALUE), slotGroup
         );
     }
 
@@ -109,16 +143,20 @@ public class SACompatAttribute {
         EquipmentSlot slot = armorItem.getEquipmentSlot();
         EquipmentSlotGroup slotGroup = EquipmentSlotGroup.bySlot(slot);
 
-        event.addModifier(
-                AttributeRegistry.ENDER_SPELL_POWER.getDelegate(),
-                new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "unrealium_eldritch_spell_power"),
-                        0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slotGroup
-        );
+        String armor = switch (slotGroup) {
+            case HEAD -> "helmet";
+            case CHEST -> "chestplate";
+            case LEGS -> "leggings";
+            case FEET -> "boots";
+            default -> "finish";
+        };
+        if (armor.equals("finish")) {
+            return;
+        }
 
         event.addModifier(
-                HLAttributeRegistry.COSMIC_SPELL_POWER.getDelegate(),
-                new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "unrealium_cosmic_spell_power"),
-                        0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slotGroup
+                AttributeRegistry.MAX_MANA.getDelegate(),
+                new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "unrealium_max_mana_" + armor), 125, AttributeModifier.Operation.ADD_VALUE), slotGroup
         );
     }
 
