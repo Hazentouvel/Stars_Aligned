@@ -18,27 +18,28 @@ public class SACompatAttribute {
         if (!(event.getItemStack().getItem() instanceof GlaciteArmorItem armorItem)) {
             return;
         }
+
         EquipmentSlot slot = armorItem.getEquipmentSlot();
         EquipmentSlotGroup slotGroup = EquipmentSlotGroup.bySlot(slot);
-        if (event.getItemStack().getItem() instanceof ESArmorMaterials.GLACITE) {
+        if (slotGroup == EquipmentSlotGroup.HEAD) {
             event.addModifier(
                     AttributeRegistry.MAX_MANA.getDelegate(),
                     new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "glacite_max_mana_helmet"), 75, AttributeModifier.Operation.ADD_VALUE), slotGroup
             );
         }
-        if (slotGroup = ) {
+        if (slotGroup == EquipmentSlotGroup.CHEST) {
             event.addModifier(
                     AttributeRegistry.MAX_MANA.getDelegate(),
                     new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "glacite_max_mana_chestplate"), 75, AttributeModifier.Operation.ADD_VALUE), slotGroup
             );
         }
-        if (slotGroup = ) {
+        if (slotGroup == EquipmentSlotGroup.LEGS) {
             event.addModifier(
                     AttributeRegistry.MAX_MANA.getDelegate(),
                     new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "glacite_max_mana_leggings"), 75, AttributeModifier.Operation.ADD_VALUE), slotGroup
             );
         }
-        if (slotGroup = ) {
+        if (slotGroup == EquipmentSlotGroup.FEET) {
             event.addModifier(
                     AttributeRegistry.MAX_MANA.getDelegate(),
                     new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "glacite_max_mana_boots"), 75, AttributeModifier.Operation.ADD_VALUE), slotGroup
@@ -57,12 +58,6 @@ public class SACompatAttribute {
         event.addModifier(
                 AttributeRegistry.ENDER_SPELL_POWER.getDelegate(),
                 new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "aethersent_ender_spell_power"),
-                        0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slotGroup
-        );
-
-        event.addModifier(
-                HLAttributeRegistry.COSMIC_SPELL_POWER.getDelegate(),
-                new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "aethersent_cosmic_spell_power"),
                         0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slotGroup
         );
     }
