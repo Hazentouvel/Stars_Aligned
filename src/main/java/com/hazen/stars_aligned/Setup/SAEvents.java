@@ -64,5 +64,9 @@ public class SAEvents {
 		SACompatAttribute.addThermalAttributes(event);
 		SACompatAttribute.addAlchemistAttributes(event);
 		SACompatAttribute.addUnrealiumAttributes(event);
+		SACompatAttribute.addStarlitDiamondAttributes(event);
+		SACompatAttribute.addCandlashAttributes(event);
+		SACompatAttribute.addColdsnapAttributes(event);
+		SACompatAttribute.addTentacleSpikeAttributes(event);
 	}
 }
