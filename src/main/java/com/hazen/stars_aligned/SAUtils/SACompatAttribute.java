@@ -1,6 +1,8 @@
 package com.hazen.stars_aligned.SAUtils;
 
 import cn.leolezury.eternalstarlight.common.item.armor.*;
+import cn.leolezury.eternalstarlight.common.registry.ESArmorMaterials;
+import cn.leolezury.eternalstarlight.common.registry.ESItems;
 import com.hazen.stars_aligned.StarsAligned;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.hazen.hazentouvelib.Registries.HLAttributeRegistry;
@@ -16,21 +18,32 @@ public class SACompatAttribute {
         if (!(event.getItemStack().getItem() instanceof GlaciteArmorItem armorItem)) {
             return;
         }
-
         EquipmentSlot slot = armorItem.getEquipmentSlot();
         EquipmentSlotGroup slotGroup = EquipmentSlotGroup.bySlot(slot);
-
-        event.addModifier(
-                AttributeRegistry.ICE_SPELL_POWER.getDelegate(),
-                new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "glacite_ice_spell_power"),
-                        0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slotGroup
-        );
-
-        event.addModifier(
-                HLAttributeRegistry.COSMIC_SPELL_POWER.getDelegate(),
-                new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "glacite_cosmic_spell_power"),
-                        0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slotGroup
-        );
+        if (event.getItemStack().getItem() instanceof ESArmorMaterials.GLACITE) {
+            event.addModifier(
+                    AttributeRegistry.MAX_MANA.getDelegate(),
+                    new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "glacite_max_mana_helmet"), 75, AttributeModifier.Operation.ADD_VALUE), slotGroup
+            );
+        }
+        if (slotGroup = ) {
+            event.addModifier(
+                    AttributeRegistry.MAX_MANA.getDelegate(),
+                    new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "glacite_max_mana_chestplate"), 75, AttributeModifier.Operation.ADD_VALUE), slotGroup
+            );
+        }
+        if (slotGroup = ) {
+            event.addModifier(
+                    AttributeRegistry.MAX_MANA.getDelegate(),
+                    new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "glacite_max_mana_leggings"), 75, AttributeModifier.Operation.ADD_VALUE), slotGroup
+            );
+        }
+        if (slotGroup = ) {
+            event.addModifier(
+                    AttributeRegistry.MAX_MANA.getDelegate(),
+                    new AttributeModifier(ResourceLocation.fromNamespaceAndPath(StarsAligned.MOD_ID, "glacite_max_mana_boots"), 75, AttributeModifier.Operation.ADD_VALUE), slotGroup
+            );
+        }
     }
 
     public static void addAethersentAttributes(ItemAttributeModifierEvent event) {
