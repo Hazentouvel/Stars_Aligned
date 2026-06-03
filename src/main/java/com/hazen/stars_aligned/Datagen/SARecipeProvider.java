@@ -28,8 +28,8 @@ public class SARecipeProvider extends RecipeProvider implements IConditionBuilde
         //Glacite Battlemage
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(ItemRegistry.ICE_RUNE.get()),
-                        Ingredient.of(ESItems.GLACITE_HELMET.get()),
                         Ingredient.of(ItemRegistry.WIZARD_HAT.get()),
+                        Ingredient.of(ESItems.GLACITE_HELMET.get()),
                         RecipeCategory.COMBAT,
                         SAItemRegistry.GLACITE_BATTLEMAGE_HELMET.get())
                 .unlocks("has_ice_rune", has(ItemRegistry.ICE_RUNE.get()))
@@ -37,8 +37,8 @@ public class SARecipeProvider extends RecipeProvider implements IConditionBuilde
 
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(ItemRegistry.ICE_RUNE.get()),
-                        Ingredient.of(ESItems.GLACITE_CHESTPLATE.get()),
                         Ingredient.of(ItemRegistry.WIZARD_CHESTPLATE.get()),
+                        Ingredient.of(ESItems.GLACITE_CHESTPLATE.get()),
                         RecipeCategory.COMBAT,
                         SAItemRegistry.GLACITE_BATTLEMAGE_CHESTPLATE.get())
                 .unlocks("has_ice_rune", has(ItemRegistry.ICE_RUNE.get()))
@@ -46,8 +46,8 @@ public class SARecipeProvider extends RecipeProvider implements IConditionBuilde
 
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(ItemRegistry.ICE_RUNE.get()),
-                        Ingredient.of(ESItems.GLACITE_LEGGINGS.get()),
                         Ingredient.of(ItemRegistry.WIZARD_LEGGINGS.get()),
+                        Ingredient.of(ESItems.GLACITE_LEGGINGS.get()),
                         RecipeCategory.COMBAT,
                         SAItemRegistry.GLACITE_BATTLEMAGE_LEGGINGS.get())
                 .unlocks("has_ice_rune", has(ItemRegistry.ICE_RUNE.get()))
@@ -55,8 +55,8 @@ public class SARecipeProvider extends RecipeProvider implements IConditionBuilde
 
         SmithingTransformRecipeBuilder.smithing(
                         Ingredient.of(ItemRegistry.ICE_RUNE.get()),
-                        Ingredient.of(ESItems.GLACITE_BOOTS.get()),
                         Ingredient.of(ItemRegistry.WIZARD_BOOTS.get()),
+                        Ingredient.of(ESItems.GLACITE_BOOTS.get()),
                         RecipeCategory.COMBAT,
                         SAItemRegistry.GLACITE_BATTLEMAGE_BOOTS.get())
                 .unlocks("has_ice_rune", has(ItemRegistry.ICE_RUNE.get()))

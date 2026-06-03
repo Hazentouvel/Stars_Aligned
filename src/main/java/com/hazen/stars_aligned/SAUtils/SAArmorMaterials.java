@@ -34,10 +34,10 @@ public class SAArmorMaterials {
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> GLACITE = register("glacite",
             glaciteArmorMap(),
-            15,
+            10,
             ESSoundEvents.ARMOR_EQUIP_GLACITE.asHolder(),
             () -> Ingredient.of(ESItems.GLACITE.get()),
-            2,
+            0.5F,
             0F);
 
 
