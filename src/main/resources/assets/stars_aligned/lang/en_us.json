@@ -15,8 +15,8 @@
   "item.stars_aligned.flowglaze_mastery_leggings": "Flowglaze Mastery Leggings",
   "item.stars_aligned.flowglaze_mastery_boots": "Flowglaze Mastery Boots",
 
-  "effect.elemental_synergies.tempered": "Tempered",
-  "effect.elemental_synergies.tempered.description": "Each stack reduces the damage you take.",
+  "effect.stars_aligned.tempered": "Tempered",
+  "effect.stars_aligned.tempered.description": "Each stack reduces the damage you take.",
 
   "creativetab.stars_aligned.stars_aligned_blocks": "Stars Aligned Blocks",
   "creativetab.stars_aligned.stars_aligned_equipment": "Stars Aligned Equipment"

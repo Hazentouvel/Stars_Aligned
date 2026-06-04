@@ -47,22 +47,22 @@ public class SAItemRegistry {
     public static final DeferredHolder<Item, Item> FLOWGLAZE_MASTERY_HELMET = ITEMS.register("flowglaze_mastery_helmet", () -> new FlowglazeMasteryArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper
             .equipment(1)
             .rarity(HLRarities.ICE_RARITY.getValue())
-            .durability(ArmorItem.Type.HELMET.getDurability(32))
+            .durability(ArmorItem.Type.HELMET.getDurability(64))
     ));
     public static final DeferredHolder<Item, Item> FLOWGLAZE_MASTERY_CHESTPLATE = ITEMS.register("flowglaze_mastery_chestplate", () -> new FlowglazeMasteryArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper
             .equipment(1)
             .rarity(HLRarities.ICE_RARITY.getValue())
-            .durability(ArmorItem.Type.CHESTPLATE.getDurability(32))
+            .durability(ArmorItem.Type.CHESTPLATE.getDurability(64))
     ));
     public static final DeferredHolder<Item, Item> FLOWGLAZE_MASTERY_LEGGINGS = ITEMS.register("flowglaze_mastery_leggings", () -> new FlowglazeMasteryArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper
             .equipment(1)
             .rarity(HLRarities.ICE_RARITY.getValue())
-            .durability(ArmorItem.Type.LEGGINGS.getDurability(32))
+            .durability(ArmorItem.Type.LEGGINGS.getDurability(64))
     ));
     public static final DeferredHolder<Item, Item> FLOWGLAZE_MASTERY_BOOTS = ITEMS.register("flowglaze_mastery_boots", () -> new FlowglazeMasteryArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper
             .equipment(1)
             .rarity(HLRarities.ICE_RARITY.getValue())
-            .durability(ArmorItem.Type.BOOTS.getDurability(32))
+            .durability(ArmorItem.Type.BOOTS.getDurability(64))
 
     ));
 

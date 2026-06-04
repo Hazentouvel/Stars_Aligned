@@ -29,8 +29,8 @@ public class SAArmorMaterials {
             15,
             ESSoundEvents.ARMOR_EQUIP_GLACITE.asHolder(),
             () -> Ingredient.of(ESItems.FLOWGLAZE.get()),
-            3,
-            0.2F);
+            1,
+            0.05F);
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> GLACITE = register("glacite",
             glaciteArmorMap(),
@@ -66,7 +66,7 @@ public class SAArmorMaterials {
     }
 
     public static EnumMap<ArmorItem.Type, Integer> flowglazeArmorMap(){
-        return makeArmorMap(4, 7, 6, 4);
+        return makeArmorMap(3, 8, 6, 3);
     }
     public static EnumMap<ArmorItem.Type, Integer> glaciteArmorMap(){
         return makeArmorMap(3, 6, 5, 3);
