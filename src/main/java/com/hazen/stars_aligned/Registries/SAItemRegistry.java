@@ -1,5 +1,6 @@
 package com.hazen.stars_aligned.Registries;
 
+import cn.leolezury.eternalstarlight.common.registry.ESDataComponents;
 import com.hazen.stars_aligned.Items.Armor.FlowglazeMastery.FlowglazeMasteryArmorItem;
 import com.hazen.stars_aligned.Items.Armor.GlaciteBattlemage.GlaciteBattlemageArmorItem;
 import com.hazen.stars_aligned.StarsAligned;
@@ -28,6 +29,7 @@ public class SAItemRegistry {
             .equipment(1)
             .rarity(HLRarities.ICE_RARITY.getValue())
             .durability(ArmorItem.Type.CHESTPLATE.getDurability(32))
+            .component(ESDataComponents.ACCESSORY_SLOT_COUNT.get(), 2)
     ));
     public static final DeferredHolder<Item, Item> GLACITE_BATTLEMAGE_LEGGINGS = ITEMS.register("glacite_battlemage_leggings", () -> new GlaciteBattlemageArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper
             .equipment(1)
@@ -53,6 +55,7 @@ public class SAItemRegistry {
             .equipment(1)
             .rarity(HLRarities.ICE_RARITY.getValue())
             .durability(ArmorItem.Type.CHESTPLATE.getDurability(64))
+            .component(ESDataComponents.ACCESSORY_SLOT_COUNT.get(), 3)
     ));
     public static final DeferredHolder<Item, Item> FLOWGLAZE_MASTERY_LEGGINGS = ITEMS.register("flowglaze_mastery_leggings", () -> new FlowglazeMasteryArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper
             .equipment(1)
