@@ -16,6 +16,7 @@ public class SACreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, StarsAligned.MOD_ID);
 
 
+    /* Commenting this out for now as two tabs are not needed
     public static final Supplier<CreativeModeTab> STARS_ALIGN_BLOCKS = CREATIVE_MODE_TAB.register("stars_aligned_blocks",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(SABlocks.VOIDSTONE_MITHRIL_ORE.get()))
                     .title(Component.translatable("creativetab.stars_aligned.stars_aligned_blocks"))
@@ -27,9 +28,9 @@ public class SACreativeModeTabs {
 
                     })
                     .build());
+*/
 
-
-    public static final Supplier<CreativeModeTab> STARS_ALIGN_EQUIPMENT = CREATIVE_MODE_TAB.register("stars_aligned_equipment",
+    public static final Supplier<CreativeModeTab> STARS_ALIGN_EQUIPMENT = CREATIVE_MODE_TAB.register("stars_aligned",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(SAItemRegistry.GLACITE_BATTLEMAGE_HELMET.get()))
                     .title(Component.translatable("creativetab.stars_aligned.stars_aligned_equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -49,6 +50,8 @@ public class SACreativeModeTabs {
 
                         output.accept(SAItemRegistry.STELLAR_LULLABY_DISC.get());
 
+                        //Blocks
+                        output.accept(SABlocks.VOIDSTONE_MITHRIL_ORE);
 
                     })
                     .build());
