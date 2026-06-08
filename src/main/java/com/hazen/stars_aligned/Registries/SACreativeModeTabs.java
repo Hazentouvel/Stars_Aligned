@@ -47,6 +47,9 @@ public class SACreativeModeTabs {
                         output.accept(SAItemRegistry.FLOWGLAZE_MASTERY_BOOTS.get());
 
 
+                        output.accept(SAItemRegistry.STELLAR_LULLABY_DISC.get());
+
+
                     })
                     .build());
 

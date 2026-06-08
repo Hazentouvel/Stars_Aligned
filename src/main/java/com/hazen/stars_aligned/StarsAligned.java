@@ -4,6 +4,7 @@ import com.hazen.stars_aligned.Blocks.SABlocks;
 import com.hazen.stars_aligned.Registries.SACreativeModeTabs;
 import com.hazen.stars_aligned.Registries.SAEffectRegistry;
 import com.hazen.stars_aligned.Registries.SAItemRegistry;
+import com.hazen.stars_aligned.Registries.SASounds;
 import com.hazen.stars_aligned.SAUtils.SAArmorMaterials;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -37,6 +38,7 @@ public class StarsAligned {
         SAItemRegistry.register(modEventBus);
         SAArmorMaterials.register(modEventBus);
         SAEffectRegistry.register(modEventBus);
+        SASounds.register(modEventBus);
 
 
         NeoForge.EVENT_BUS.register(this);

@@ -10,6 +10,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.Collection;
@@ -17,6 +18,12 @@ import java.util.Collection;
 public class SAItemRegistry {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(StarsAligned.MOD_ID);
 
+    public static final DeferredItem<Item> STELLAR_LULLABY_DISC = ITEMS.register("stellar_lullaby_disc",
+            () -> new Item(new Item.Properties()
+                    .jukeboxPlayable(SASounds.STELLAR_LULLABY_KEY)
+                    .rarity(HLRarities.COSMIC_RARITY.getValue())
+                    .stacksTo(1)
+            ));
 
     // Glacite Battlemage
 

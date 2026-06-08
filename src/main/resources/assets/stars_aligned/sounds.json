@@ -1,0 +1,10 @@
+{
+  "stellar_lullaby": {
+    "sounds": [
+      {
+        "name": "stars_aligned:stellar_lullaby",
+        "stream": true
+      }
+    ]
+  }
+}

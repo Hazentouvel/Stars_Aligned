@@ -22,15 +22,6 @@ public class SAHandler {
                 livingEntity.setTicksFrozen(Math.min(livingEntity.getTicksFrozen() + 80, 300));
             }
         }
-        if (entity.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof FlowglazeMasteryArmorItem
-                || entity.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof FlowglazeMasteryArmorItem
-                || entity.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof FlowglazeMasteryArmorItem
-                || entity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof FlowglazeMasteryArmorItem
-        ) {
-            if (source.getDirectEntity() instanceof LivingEntity livingEntity) {
-                livingEntity.setTicksFrozen(Math.min(livingEntity.getTicksFrozen() + 100, 320));
-            }
-        }
 
 
     }

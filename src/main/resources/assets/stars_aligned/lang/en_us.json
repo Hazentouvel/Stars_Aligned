@@ -1,8 +1,13 @@
 {
+
   "tooltip.stars_aligned.flowglaze_armor": "Upon hitting a mob, inflict Brittle for 5 seconds.",
 
 
   "block.stars_aligned.voidstone_mithril_ore": "Voidstone Mithril Ore",
+
+
+  "item.stars_aligned.stellar_lullaby_disc": "Stellar Lullaby Music Disc",
+  "item.stars_aligned.stellar_lullaby_disc.desc": "Stellar Lullaby - Hazen (ARR)",
 
 
   "item.stars_aligned.glacite_battlemage_helmet": "Glacite Battlemage Helmet",
