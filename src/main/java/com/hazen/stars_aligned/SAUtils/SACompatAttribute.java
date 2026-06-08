@@ -1,10 +1,10 @@
 package com.hazen.stars_aligned.SAUtils;
 
 import cn.leolezury.eternalstarlight.common.item.armor.*;
-import cn.leolezury.eternalstarlight.common.item.combat.CandlashItem;
-import cn.leolezury.eternalstarlight.common.item.combat.ColdsnapItem;
-import cn.leolezury.eternalstarlight.common.item.combat.TentacleSpikeItem;
+import cn.leolezury.eternalstarlight.common.item.combat.*;
+import cn.leolezury.eternalstarlight.common.item.combat.ESItemTiers;
 import cn.leolezury.eternalstarlight.neoforge.item.armor.NeoStarlitDiamondArmorItem;
+import com.hazen.stars_aligned.Registries.SAItemRegistry;
 import com.hazen.stars_aligned.StarsAligned;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.hazen.hazentouvelib.Registries.HLAttributeRegistry;
@@ -12,6 +12,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
 import net.neoforged.neoforge.event.ItemAttributeModifierEvent;
 
 public class SACompatAttribute {

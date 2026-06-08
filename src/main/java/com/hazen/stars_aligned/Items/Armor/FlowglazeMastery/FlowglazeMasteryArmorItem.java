@@ -35,11 +35,8 @@ public class FlowglazeMasteryArmorItem extends ImbuableSAArmorItem implements ID
 
     public void appendHoverText(ItemStack itemStack, Item.TooltipContext tooltipContext, List<Component> list, TooltipFlag tooltipFlag) {
         list.add(CommonComponents.EMPTY);
-        list.add(Component.translatable("item.modifiers.armor").withStyle(ChatFormatting.GRAY));
-        list.add(Component.literal(" ").append(Component.translatable("tooltip.eternal_starlight.glacite_armor")).withStyle(ChatFormatting.AQUA));
-        if (this.type == Type.CHESTPLATE) {
-            list.add(Component.literal(" ").append(Component.translatable("tooltip.stars_aligned.flowglaze_armor")).withStyle(ChatFormatting.AQUA));
-        }
+        list.add(Component.translatable("item.stars_aligned.modifier.set_bonus").withStyle(ChatFormatting.GRAY));
+        list.add(Component.literal(" ").append(Component.translatable("tooltip.stars_aligned.flowglaze_armor")).withStyle(ChatFormatting.DARK_AQUA));
         super.appendHoverText(itemStack, tooltipContext, list, tooltipFlag);
     }
 
