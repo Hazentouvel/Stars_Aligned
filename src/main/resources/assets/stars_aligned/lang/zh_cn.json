@@ -1,0 +1,27 @@
+{
+  "block.stars_aligned.voidstone_mithril_ore": "虚空石秘银矿石",
+
+
+  "item.stars_aligned.stellar_lullaby_disc": "音乐唱片",
+  "item.stars_aligned.stellar_lullaby_disc.desc": "Stellar Lullaby - Hazen (ARR)",
+
+  "item.stars_aligned.modifier.set_bonus": "全套穿戴时：",
+
+  "item.stars_aligned.glacite_battlemage_helmet": "永冻石战法帽",
+  "item.stars_aligned.glacite_battlemage_chestplate": "永冻石战法袍",
+  "item.stars_aligned.glacite_battlemage_leggings": "永冻石战法护腿",
+  "item.stars_aligned.glacite_battlemage_boots": "永冻石战法靴子",
+
+  "item.stars_aligned.flowglaze_mastery_helmet": "琉璃战法帽",
+  "item.stars_aligned.flowglaze_mastery_chestplate": "琉璃战法袍",
+  "item.stars_aligned.flowglaze_mastery_leggings": "琉璃战法护腿",
+  "item.stars_aligned.flowglaze_mastery_boots": "琉璃战法靴子",
+
+  "tooltip.stars_aligned.flowglaze_armor": "受到伤害时获得可叠加的伤害减免。",
+
+  "effect.stars_aligned.tempered": "淬炼",
+  "effect.stars_aligned.tempered.description": "每级减少你所受伤害。",
+
+  "creativetab.stars_aligned.stars_aligned_blocks": "群星归位 - 方块",
+  "creativetab.stars_aligned.stars_aligned_equipment": "群星归位"
+}
