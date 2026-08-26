@@ -1,0 +1,8 @@
+PolyForm Shield License 1.0.0
+
+You CAN
+- Use this mod in a modpack.
+- Submit Pull Requests to this repository.
+
+You CANNOT
+- Use or redistribute any assets of this mod, even for personal use.
