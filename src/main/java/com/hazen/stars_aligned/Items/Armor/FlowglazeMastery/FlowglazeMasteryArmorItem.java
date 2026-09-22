@@ -7,6 +7,7 @@ import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import io.redspace.ironsspellbooks.item.armor.IDisableHat;
 import io.redspace.ironsspellbooks.item.armor.IDisableJacket;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
+import net.hazen.hazentouvelib.Rarities.HLRarities;
 import net.hazen.hazentouvelib.Registries.HLAttributeRegistry;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.CommonComponents;
@@ -25,7 +26,11 @@ import java.util.List;
 
 public class FlowglazeMasteryArmorItem extends ImbuableSAArmorItem implements IDisableJacket, IDisableHat {
     public FlowglazeMasteryArmorItem(Type type, Properties settings) {
-        super(SAArmorMaterials.FLOWGLAZE, type, settings, new AttributeContainer[]{
+        super(SAArmorMaterials.FLOWGLAZE, type, settings
+                        .stacksTo(1)
+                        .rarity(HLRarities.ICE_RARITY.getValue())
+                ,
+                new AttributeContainer[]{
                 new AttributeContainer(AttributeRegistry.MAX_MANA, 125, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.CASTING_MOVESPEED, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(AttributeRegistry.ICE_SPELL_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),

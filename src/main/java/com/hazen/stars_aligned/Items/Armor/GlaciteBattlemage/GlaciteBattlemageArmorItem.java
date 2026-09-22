@@ -8,6 +8,7 @@ import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import io.redspace.ironsspellbooks.item.armor.IDisableHat;
 import io.redspace.ironsspellbooks.item.armor.IDisableJacket;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
+import net.hazen.hazentouvelib.Rarities.HLRarities;
 import net.hazen.hazentouvelib.Registries.HLAttributeRegistry;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
@@ -26,7 +27,10 @@ import java.util.List;
 
 public class GlaciteBattlemageArmorItem extends ImbuableSAArmorItem implements IDisableJacket, IDisableHat {
     public GlaciteBattlemageArmorItem(Type type, Properties settings) {
-        super(SAArmorMaterials.GLACITE, type, settings, new AttributeContainer[]{
+        super(SAArmorMaterials.GLACITE, type, settings
+                        .stacksTo(1)
+                        .rarity(HLRarities.ICE_RARITY.getValue())
+                , new AttributeContainer[]{
                 new AttributeContainer(AttributeRegistry.MAX_MANA, 125, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.ICE_SPELL_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(HLAttributeRegistry.COSMIC_SPELL_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)

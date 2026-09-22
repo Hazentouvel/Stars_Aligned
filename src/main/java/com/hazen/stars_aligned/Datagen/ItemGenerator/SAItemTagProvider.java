@@ -1,5 +1,6 @@
 package com.hazen.stars_aligned.Datagen.ItemGenerator;
 
+import cn.leolezury.eternalstarlight.common.util.ESTags;
 import com.hazen.stars_aligned.Registries.SAItemRegistry;
 import com.hazen.stars_aligned.SAUtils.SATags;
 import com.hazen.stars_aligned.StarsAligned;
@@ -20,6 +21,11 @@ public class SAItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+
+        tag(ESTags.Items.STRANGHOUL_VULNERABLE_TO)
+                .add(
+                        SAItemRegistry.GLACITE_BATTLEMAGE_HELMET.get()
+                );
 
         tag(SATags.Items.UNTRIMMABLE_ARMOR)
                 .add(

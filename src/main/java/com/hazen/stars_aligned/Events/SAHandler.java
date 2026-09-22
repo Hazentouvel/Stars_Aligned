@@ -1,6 +1,5 @@
-package com.hazen.stars_aligned.Setup;
+package com.hazen.stars_aligned.Events;
 
-import com.hazen.stars_aligned.Items.Armor.FlowglazeMastery.FlowglazeMasteryArmorItem;
 import com.hazen.stars_aligned.Items.Armor.GlaciteBattlemage.GlaciteBattlemageArmorItem;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EquipmentSlot;

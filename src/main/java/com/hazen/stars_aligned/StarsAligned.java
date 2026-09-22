@@ -1,11 +1,9 @@
 package com.hazen.stars_aligned;
 
 import com.hazen.stars_aligned.Blocks.SABlocks;
-import com.hazen.stars_aligned.Registries.SACreativeModeTabs;
-import com.hazen.stars_aligned.Registries.SAEffectRegistry;
-import com.hazen.stars_aligned.Registries.SAItemRegistry;
-import com.hazen.stars_aligned.Registries.SASounds;
+import com.hazen.stars_aligned.Registries.*;
 import com.hazen.stars_aligned.SAUtils.SAArmorMaterials;
+import com.hazen.stars_aligned.Spells.SASpellRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
@@ -39,6 +37,8 @@ public class StarsAligned {
         SAArmorMaterials.register(modEventBus);
         SAEffectRegistry.register(modEventBus);
         SASounds.register(modEventBus);
+        SASpellRegistries.register(modEventBus);
+        SAEntityRegistry.register(modEventBus);
 
 
         NeoForge.EVENT_BUS.register(this);

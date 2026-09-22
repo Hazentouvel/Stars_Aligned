@@ -71,7 +71,7 @@ neoForge {
     }
 
     // This line is optional. Access Transformers are automatically detected
-    //accessTransformers = project.files('src/main/templates/META-INF/accesstransformer.cfg')
+    accessTransformers = project.files('src/main/templates/META-INF/accesstransformer.cfg')
 
     // Default run configurations.
     // These can be tweaked, removed, or duplicated as needed.
@@ -153,18 +153,19 @@ dependencies {
      */
 
     //Iron's Spells 'n Spellbooks
-    implementation "curse.maven:irons_spells_n_spellbooks-855414:7907341"
-    implementation "curse.maven:iron_lib-1492763:7907336"
-    implementation "curse.maven:geckolib-388172:6304958"
+    implementation "curse.maven:irons_spells_n_spellbooks-855414:8237097"
+    implementation "curse.maven:iron_lib-1492763:8207094"
+    implementation "curse.maven:geckolib-388172:8350073"
     implementation "curse.maven:player_animator-658587:6024462"
-    implementation "curse.maven:curios-309927:6342656"
+    implementation "curse.maven:curios-309927:6529130"
 
     //Ace Utils
-    implementation "curse.maven:eternal_starlight-1080592:7788339"
+    implementation "curse.maven:eternal_starlight-1080592:8931080"
 
 
     //HazentouveLib
-    implementation "curse.maven:hazentouvelib-1528722:8015594"
+    implementation "curse.maven:hazentouvelib-1528722:8666581"
+    implementation "curse.maven:caelus-308989:5694215"
 
     //Apothic Attributes
     /*

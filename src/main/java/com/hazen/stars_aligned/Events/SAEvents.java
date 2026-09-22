@@ -1,4 +1,4 @@
-package com.hazen.stars_aligned.Setup;
+package com.hazen.stars_aligned.Events;
 
 import com.hazen.stars_aligned.Items.Armor.FlowglazeMastery.FlowglazeMasteryArmorItem;
 import com.hazen.stars_aligned.Registries.Effects.TemperedEffect;
